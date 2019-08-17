@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Description = () => (
+const Description = ({ description }) => (
   <div className="description">
-    <p className="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ex explicabo fugit beatae.</p>
+    <p className="short-text">{description}</p>
   </div>
 );
 

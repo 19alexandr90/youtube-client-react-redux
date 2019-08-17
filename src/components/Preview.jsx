@@ -1,17 +1,18 @@
 import React from 'react';
 
-const Preview = (props) => {
-  const { title } = props;
+const Preview = ({ title, videoId, thumbnails }) => {
+  const videoLink = `https://www.youtube.com/watch?v=${videoId}`;
+  const thumbnail = thumbnails.high.url;
   return (
     <div>
       <figure className="preview">
-        <img src="https://cdn.igromania.ru/mnt/news/5/3/e/4/4/f/81277/86d09380a4511c53_1200xH.jpg" alt="dota" />
+        <img src={thumbnail} alt={title} />
         <figcaption>
-          <a className="figcaption-link" href="https://cdn.igromania.ru/mnt/news/5/3/e/4/4/f/81277/86d09380a4511c53_1200xH.jpg">{title}</a>
+          <a className="figcaption-link" href={videoLink}>{title}</a>
         </figcaption>
       </figure>
     </div>
-  )
-}
+  );
+};
 
 export default Preview;

@@ -6,14 +6,20 @@ import Description from './Description';
 
 
 const Card = (props) => {
-  const { video: { snippet: { channelTitle, publishedAt, title } } } = props;
+  const {
+    video: {
+      snippet: {
+        channelTitle, publishedAt, title, description, videoId, thumbnails,
+      },
+    },
+  } = props;
   return (
     <div id="slider">
       <div id="video-container">
         <div className="video">
-          <Preview title={title} />
+          <Preview title={title} videoId={videoId} thumbnails={thumbnails} />
           <Information channelTitle={channelTitle} publishedAt={publishedAt} />
-          <Description />
+          <Description description={description} />
         </div>
       </div>
     </div>

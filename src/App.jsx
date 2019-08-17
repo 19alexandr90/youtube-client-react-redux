@@ -1,5 +1,7 @@
 import React from 'react';
-import './App.css';
+import uuid from 'uuid';
+
+import './App.scss';
 
 import Input from './components/Input';
 import Card from './components/Card';
@@ -25,13 +27,13 @@ class App extends React.Component {
           this.setState({ queryResult: result });
           return result;
         })
-        .then((result) => console.log(result));
+        .then((result) => console.log(result, query));
     };
 
     // eslint-disable-next-line react/destructuring-assignment
     // const video = this.state.queryResult.items && this.state.queryResult.items[0];
-    const { items } = this.state.queryResult;
-    const cards = items && items.map((video, index) => <Card key={index} video={video} />);
+    const { queryResult: { items } } = this.state;
+    const cards = items && items.map((video) => <Card key={uuid()} video={video} />);
     return (
       <div>
         <Input getVideo={getVideo} />
