@@ -14,7 +14,7 @@ const Input = (props) => {
       <button className="search-button" type="submit">
         <i className="fa fa-search" />
       </button>
-      <input className="search-row-input" type="text" placeholder="What kind of vidoe do you wanna find?" />
+      <input className="search-row-input" type="text" placeholder="What kind of video do you wanna find?" />
     </form>
   );
 };

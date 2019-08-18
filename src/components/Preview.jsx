@@ -4,10 +4,10 @@ const Preview = ({ title, videoId, thumbnails }) => {
   const videoLink = `https://www.youtube.com/watch?v=${videoId}`;
   const thumbnail = thumbnails.high.url;
   return (
-    <div>
+    <div className="preview-container">
       <figure className="preview">
         <img src={thumbnail} alt={title} />
-        <figcaption>
+        <figcaption className="figcaption">
           <a className="figcaption-link" href={videoLink}>{title}</a>
         </figcaption>
       </figure>
