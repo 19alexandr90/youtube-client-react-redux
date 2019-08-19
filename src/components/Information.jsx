@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { formatDate } from './helpers/Helpers';
+
 const Information = (props) => {
   const { channelTitle, publishedAt } = props;
   return (
@@ -7,7 +9,7 @@ const Information = (props) => {
       <i className="author fas fa-male" />
       <p className="author">{channelTitle}</p>
       <i className="date far fa-calendar-alt" />
-      <p className="date">{publishedAt}</p>
+      <p className="date">{formatDate(publishedAt)}</p>
     </div>
   );
 };
