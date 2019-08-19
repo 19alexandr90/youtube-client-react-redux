@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Input = (props) => {
-  const { getVideo } = props;
+  const { getVideos } = props;
   // const newConstName_getVideo = props.propName_GetVideo;
   const onSubmit = (event) => {
     event.preventDefault();
-    return getVideo(event.target[1].value);
+    return getVideos(event.target[1].value);
   };
 
   return (
@@ -20,7 +20,7 @@ const Input = (props) => {
 };
 
 Input.propTypes = {
-  getVideo: PropTypes.func.isRequired,
+  getVideos: PropTypes.func.isRequired,
 };
 
 export default Input;
