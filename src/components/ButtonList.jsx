@@ -24,9 +24,9 @@ const ButtonList = ({
   </div>
 );
 
-const mapStateToProps = (state) => ({
-  nextToken: state.nextToken,
-  prevToken: state.prevToken,
+const mapStateToProps = ({ nextToken, prevToken }) => ({
+  nextToken,
+  prevToken,
 });
 
 const mapDispatchToProps = {
