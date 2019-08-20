@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/youtube-client-react-redux/static/css/main.5dfecbfc.chunk.css",
+    "main.js": "/youtube-client-react-redux/static/js/main.51cd818c.chunk.js",
+    "main.js.map": "/youtube-client-react-redux/static/js/main.51cd818c.chunk.js.map",
+    "runtime~main.js": "/youtube-client-react-redux/static/js/runtime~main.f5ab025e.js",
+    "runtime~main.js.map": "/youtube-client-react-redux/static/js/runtime~main.f5ab025e.js.map",
+    "static/js/2.64b57c62.chunk.js": "/youtube-client-react-redux/static/js/2.64b57c62.chunk.js",
+    "static/js/2.64b57c62.chunk.js.map": "/youtube-client-react-redux/static/js/2.64b57c62.chunk.js.map",
+    "index.html": "/youtube-client-react-redux/index.html",
+    "precache-manifest.1900abaa798eca2b0109c860b6382d7f.js": "/youtube-client-react-redux/precache-manifest.1900abaa798eca2b0109c860b6382d7f.js",
+    "service-worker.js": "/youtube-client-react-redux/service-worker.js",
+    "static/css/main.5dfecbfc.chunk.css.map": "/youtube-client-react-redux/static/css/main.5dfecbfc.chunk.css.map",
+    "static/media/loading.be00fc4a.svg": "/youtube-client-react-redux/static/media/loading.be00fc4a.svg",
+    "static/media/App.scss": "/youtube-client-react-redux/static/media/main.43f02461.png"
+  }
+}
