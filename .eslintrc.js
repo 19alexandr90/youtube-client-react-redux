@@ -4,6 +4,8 @@ module.exports = {
       "browser": true
   },
   "rules": {
-    "react/prop-types": 'off'
+    "react/prop-types": 'off',
+    "import/prefer-default-export": 0,
+    "no-shadow": "off",
   }
 };

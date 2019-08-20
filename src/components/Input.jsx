@@ -1,26 +1,30 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { getQuery, getVideos } from '../actions';
 
-const Input = (props) => {
-  const { getVideos } = props;
-  // const newConstName_getVideo = props.propName_GetVideo;
-  const onSubmit = (event) => {
-    event.preventDefault();
-    return getVideos(event.target[1].value);
-  };
+const Input = ({ getQuery, getVideos }) => (
+  <form
+    className="search-row"
+    onSubmit={(event) => {
+      event.preventDefault();
+      return getVideos();
+    }}
+  >
+    <button className="search-button" type="submit">
+      <i className="fa fa-search" />
+    </button>
+    <input
+      className="search-row-input"
+      onChange={(e) => getQuery(e.target.value)}
+      type="text"
+      placeholder="What kind of video do you wanna find?"
+    />
+  </form>
+);
 
-  return (
-    <form className="search-row" onSubmit={onSubmit}>
-      <button className="search-button" type="submit">
-        <i className="fa fa-search" />
-      </button>
-      <input className="search-row-input" type="text" placeholder="What kind of video do you wanna find?" />
-    </form>
-  );
+const mapDispatchToProps = {
+  getVideos,
+  getQuery: (value) => getQuery(value),
 };
 
-Input.propTypes = {
-  getVideos: PropTypes.func.isRequired,
-};
-
-export default Input;
+export default connect(null, mapDispatchToProps)(Input);

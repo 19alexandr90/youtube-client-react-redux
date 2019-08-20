@@ -14,12 +14,10 @@ const Card = (props) => {
     },
   } = props;
   return (
-    <div id="video-container">
-      <div className="video">
-        <Preview title={title} videoId={videoId} thumbnails={thumbnails} />
-        <Information channelTitle={channelTitle} publishedAt={publishedAt} />
-        <Description description={description} />
-      </div>
+    <div className="video">
+      <Preview title={title} videoId={videoId} thumbnails={thumbnails} />
+      <Information channelTitle={channelTitle} publishedAt={publishedAt} />
+      <Description description={description} />
     </div>
   );
 };
